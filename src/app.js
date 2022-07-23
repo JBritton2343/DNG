@@ -6,7 +6,7 @@ let ext = ['com', 'org', 'gov', 'edu']
 
 window.onload = function() {
   //write your code here
-  function DNG(pronounArr, adjArr, nounArr) {
+  function DNG(pronounArr, adjArr, nounArr, extArr) {
     let randPronoun = genRanNum(pronounArr.length);
     let myPronoun = pronounArr[randPronoun];
     console.log(myPronoun);
