@@ -2,6 +2,7 @@
 let pronoun = ['the', 'our', 'your', 'his', 'her'];
 let adj = ['great', 'galactic', 'massive', 'diabolic'];
 let noun = ['apple', 'bear', 'coyote', 'shark', 'jogger', 'racoon'];
+let ext = ['com', 'org', 'gov', 'edu']
 
 window.onload = function() {
   //write your code here
@@ -18,12 +19,16 @@ window.onload = function() {
     let myNoun = nounArr[randNoun];
     console.log(myNoun);
 
+    let randExt = genRanNum(extArr.length);
+    let myExt = extArr[randExt];
+    console.log(myExt);
+
     
-    return `${myPronoun}` + `${myAdj}` + `${myNoun}` + `.com`;
+    return `${myPronoun}` + `${myAdj}` + `${myNoun}` + `.` + `${myExt}`;
   }
 
   let myDNG = document.getElementById("myDNG");
-  myDNG.innerHTML=DNG(pronoun, adj, noun);
+  myDNG.innerHTML=DNG(pronoun, adj, noun, ext);
   console.log(myDNG);
 }; 
 function genRanNum(max) {
