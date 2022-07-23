@@ -10,7 +10,7 @@ window.onload = function() {
     let myPronoun = pronounArr[randPronoun];
     console.log(myPronoun);
 
-    let randadj = genRanNum(adjArr.length);
+    let randAdj = genRanNum(adjArr.length);
     let myAdj = adjArr[randAdj];
     console.log(myAdj);
 
@@ -23,7 +23,7 @@ window.onload = function() {
   }
 
   let myDNG = document.getElementById("myDNG");
-  myExcuse.innerHTML=DNG(pronoun, adj, noun);
+  myDNG.innerHTML=DNG(pronoun, adj, noun);
   console.log(myDNG);
 }; 
 function genRanNum(max) {
