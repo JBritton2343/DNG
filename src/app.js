@@ -1,11 +1,31 @@
 /* eslint-disable */
-import "bootstrap";
-import "./style.css";
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+let pronoun = ['the', 'our', 'your', 'his', 'her'];
+let adj = ['great', 'galactic', 'massive', 'diabolic'];
+let noun = ['apple', 'bear', 'coyote', 'shark', 'jogger', 'racoon'];
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
-};
+  function DNG(pronounArr, adjArr, nounArr) {
+    let randPronoun = genRanNum(pronounArr.length);
+    let myPronoun = pronounArr[randPronoun];
+    console.log(myPronoun);
+
+    let randadj = genRanNum(adjArr.length);
+    let myAdj = adjArr[randAdj];
+    console.log(myAdj);
+
+    let randNoun = genRanNum(nounArr.length);
+    let myNoun = nounArr[randNoun];
+    console.log(myNoun);
+
+    
+    return `${myPronoun}` + `${myAdj}` + `${myNoun}` + `.com`;
+  }
+
+  let myDNG = document.getElementById("myDNG");
+  myExcuse.innerHTML=DNG(pronoun, adj, noun);
+  console.log(myDNG);
+}; 
+function genRanNum(max) {
+  return Math.floor(Math.random() * max);
+}
