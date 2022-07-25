@@ -8,23 +8,27 @@ window.onload = function() {
   //write your code here
   function domainNameGen(pronounArr, adjArr, nounArr, extArr) {
     let domainName = "";
-    for(let i = 0; i < Array.length; i++){
-      for(let r = 0; r < arr[i].length; r++){
-        for(let p = 0; p < arr[r].length; p++){
-          for(let t = 0; t<arr[p].length; t++ ){
-
-          }
-        }
+    for(let i = 0; i < pronounArr.length; i++){
+      for(let j = 0; j < pronounArr.length[i]; j++);
+    
+    }
+      for(let m = 0; m < adjArr.length; m++){
+        for(let n = 0; n < adjArr.length[m]; n++);
+      }
+      for (let k = 0; k < nounArr.length; k++){
+        for(let l= 0; k < nounArr.length[k]; l++);
+      }
+      for(let w = 0; w < extArr.length; w++){
 
       }
-    }
-    
+          
+     
 
     
     return `${myPronoun}` + `${myAdj}` + `${myNoun}` + `.` + `${myExt}`;
   }
 
-  let myDNG = document.getElementById("myDNG");
+  let dngList = document.getElementById("myDNG");
   myDNG.innerHTML=domainNameGen(pronoun, adj, noun, ext);
-  console.log(myDNG);
+  console.log(dngList);
 }; 
