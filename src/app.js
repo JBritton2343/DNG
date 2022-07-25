@@ -16,9 +16,10 @@ let ext = ['com', 'org', 'edu'];
             }
           }
         }
-      }
-      let string = `${pronounArr[i]}${adjArr[j]}
+        let string = `${pronounArr[i]}${adjArr[j]}
               ${nounArr[k]}.${extArr[l]}`
+      }
+      
       return string;
     }
       
