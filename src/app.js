@@ -23,7 +23,7 @@ let ext = ['com', 'org', 'edu'];
     }  
      
   let dngList = document.getElementById("myDNG");
-  myDNG.innerHTML=domainNameGen(pronounArr, adjArr, nounArr, extArr);
+  myDNG.innerHTML=domainNameGen(string);
   
 
 
