@@ -6,7 +6,7 @@ let ext = ['com', 'org', 'edu'];
 
 
   //write your code here
-  const domainNameGen = (pronounArr, adjArr, nounArr, extArr) => {
+  let domainNameGen = (pronounArr, adjArr, nounArr, extArr) => {
 
       for(let i=0; i<pronounArr.length; i++){
         for(let j=0; j<adjArr.length; j++){
