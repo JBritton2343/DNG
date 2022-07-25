@@ -32,7 +32,7 @@ let ext = ['com', 'org', 'edu'];
 
      
   let dngList = document.getElementById("myDNG");
-  myDNG.innerHTML=domainNameGen(pronoun, adj, noun, ext);
-  console.log(dngList);
+  myDNG.innerHTML=domainNameGen(pronounArr, adjArr, nounArr, extArr);
+  
 
 
