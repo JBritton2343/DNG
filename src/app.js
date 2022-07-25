@@ -8,9 +8,9 @@ window.onload = function() {
   //write your code here
   const domainNameGen = () => {
 
-    let getDomainName = () =>
-    `${prounoun[randomNum(pronoun.length)]}`+`${adj[randomNum(adj.length)]}`+
-    `${noun[randomNum(noun.length)]}`+`.`+`${ext[randomNum(ext.length)]}`
+    let domainName = () =>
+    `${prounoun[randomNum(pronoun.length)]}${adj[randomNum(adj.length)]}
+    ${noun[randomNum(noun.length)]}.${ext[randomNum(ext.length)]}`
   }    
   let dngList = document.getElementById("myDNG");
   myDNG.innerHTML=domainNameGen(pronoun, adj, noun, ext);
