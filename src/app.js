@@ -13,7 +13,7 @@ window.onload = function() {
     ${noun[randomNum(noun.length)]}.${ext[randomNum(ext.length)]}`
   }    
   let dngList = document.getElementById("myDNG");
-  myDNG.innerHTML=domainNameGen(pronoun, adj, noun, ext);
+  myDNG.innerHTML=domainNameGen();
   console.log(dngList);
 }; 
 let randomNum =(max)=> Math.floor(Math.random() * max);
