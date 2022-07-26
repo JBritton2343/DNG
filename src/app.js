@@ -12,15 +12,16 @@ let ext = ['com', 'org', 'edu'];
         for(let j=0; j<adjArr.length; j++){
           for(let k=0; k<nounArr.length; k++){
             for(let l=0; l<extArr.length; l++){
-              
+               let string = `${pronounArr[i]}${adjArr[j]}
+              ${nounArr[k]}.${extArr[l]}`
+              console.log(string)
             }
           }
         }
+       
+      
       }
-      let string = `${pronounArr[i]}${adjArr[j]}
-              ${nounArr[k]}.${extArr[l]}`
-              console.log(string)
-      return string;
+      
       
     }  
      domainNameGen(pronoun, adj, noun, ext);
