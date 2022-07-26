@@ -23,7 +23,7 @@ let ext = ['com', 'org', 'edu'];
       return string;
       
     }  
-     
+     domainNameGen(pronoun, adj, noun, ext);
   
 
 
