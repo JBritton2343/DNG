@@ -21,7 +21,7 @@ let ext = ['com', 'org', 'edu'];
               ${nounArr[k]}.${extArr[l]}`
       return string;
     }  
-     
+     console.log(string)
   
 
 
