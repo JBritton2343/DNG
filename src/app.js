@@ -19,8 +19,9 @@ let ext = ['com', 'org', 'edu'];
       }
       let string = `${pronounArr[i]}${adjArr[j]}
               ${nounArr[k]}.${extArr[l]}`
+              console.log(string)
       return string;
-      console.log(string)
+      
     }  
      
   
