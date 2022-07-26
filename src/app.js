@@ -22,8 +22,6 @@ let ext = ['com', 'org', 'edu'];
       return string;
     }  
      
-  let dngList = document.getElementById("myDNG");
-  myDNG.innerHTML=domainNameGen(string);
   
 
 
